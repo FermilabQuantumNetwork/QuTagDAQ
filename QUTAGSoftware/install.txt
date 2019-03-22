@@ -1,0 +1,10 @@
+QT4 Core
+Run the following installation line:
+sudo apt install libqt4-designer libqt4-opengl libqt4-svg libqtgui4 libqtwebkit4
+I believe this is only needed for the Daisy GUI. If you run the custom DAQ program, this is not needed.
+
+libusb 1.0
+For me on Ubuntu 18 this already worked without doing anything.
+If not, then perhaps this works:
+sudo apt-get install libusb-dev
+
