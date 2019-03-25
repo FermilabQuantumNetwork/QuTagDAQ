@@ -29,5 +29,5 @@ CollectRounds=$(($DAQTotalTime*1000000/$CollectTime))
 
 #echo $CoincidenceWindow $MasterRate $CollectTime $CollectRounds
 
-~/QUTAG-LX64-V1.1.6/userlib/QUTAGDAQ/FQNETDAQ signal $CoincidenceWindow $MasterRate $CollectTime $CollectRounds
+~/QUTAG-LX64-V1.1.6/userlib/QuTagDAQ/FQNETDAQ signal $CoincidenceWindow $MasterRate $CollectTime $CollectRounds
 

@@ -159,7 +159,7 @@ static void run( int selftest, int flatgen, int normgen,
   char outfname[1024];
   strcat(outfname, outputfilename);
   strcat(outfname, ".txt");
-  printf("Output Data File: %s",outfname);
+  printf("Output Data File: %s\n",outfname);
   data = fopen(outfname,"w");
   fprintf(data,"#timestamp  channel\n");
   int ii = 0;
