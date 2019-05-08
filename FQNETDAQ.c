@@ -321,14 +321,15 @@ static void run( int selftest, int flatgen, int normgen,
 	    NEventsWritten = NEventsWritten + 1;
 	    //printf("==new event==\n");
 	    for( ii = 0; ii < 4; ii++){
-	      if( evt_time[ii] != -666 ){
+	      //if( evt_time[ii] != -666 ){
 		//printf("%d:%"LLDFORMAT";", ii+1, evt_time[ii]);	
-		if( ii < 3 ) fprintf(data,"%"LLDFORMAT" ", evt_time[ii]);
-		else fprintf(data,"%"LLDFORMAT"\n", evt_time[ii]);
-	      }
-	    }
+		fprintf(data,"%"LLDFORMAT" ", evt_time[ii], ii);
+	  
+		 //	  fprintf(data,"%"LLDFORMAT"", evt_time[ii]);
+		 if(ii==3) fprintf(data,"\n");		
+	    }}  
 	    //printf("\n");
-	  }
+	  
 	  
 	  good_event = 1;
 	  for( ii = 0; ii < 4; ii++) evt_time[ii] = -666;
